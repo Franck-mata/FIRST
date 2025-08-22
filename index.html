@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Scanner avec Caméra</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <h1>📷 Scanner un document avec la caméra</h1>
+
+  <!-- Vidéo en direct -->
+  <video id="video" autoplay></video>
+  
+  <!-- Bouton pour capturer -->
+  <button id="capture">📸 Capturer</button>
+
+  <!-- Zone d’affichage de la photo -->
+  <canvas id="canvas"></canvas>
+
+  <!-- Résultat OCR -->
+  <h2>Texte reconnu :</h2>
+  <div id="output"></div>
+
+  <!-- Librairie OCR -->
+  <script src="https://cdn.jsdelivr.net/npm/tesseract.js@4/dist/tesseract.min.js"></script>
+  <script src="index.js"></script>
+</body>
+</html>
